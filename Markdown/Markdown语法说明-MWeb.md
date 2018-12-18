@@ -1,4 +1,4 @@
-# [Markdown](https://zh.mweb.im/markdown-cat.html) 語法說明-繁體中文
+# [Markdown](https://zh.mweb.im/markdown-cat.html) 语法说明
 
 [TOC]
 
@@ -49,25 +49,25 @@ Document. Please refer to [Markdown: Syntax](http://daringfireball.net/projects/
 
 
 
-Markdown 的目標是實現「易讀易寫」。
+Markdown 的目标是实现“易读易写”。
 
-不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。Markdown 語法受到一些既有 text-to-HTML 格式的影響，包括 [Setext](http://docutils.sourceforge.net/mirror/setext.html)、[atx](http://www.aaronsw.com/2002/atx/)、[Textile](http://textism.com/tools/textile/)、[reStructuredText](http://docutils.sourceforge.net/rst.html)、[Grutatext](http://www.triptico.com/software/grutatxt.html) 和 [EtText](http://ettext.taint.org/doc/)，然而最大靈感來源其實是純文字的電子郵件格式。
+不过最需要强调的便是它的可读性。一份使用 Markdown 格式撰写的文件应该可以直接以纯文字发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 [Setext](http://docutils.sourceforge.net/mirror/setext.html)、[atx](http://www.aaronsw.com/2002/atx/)、[Textile](http://textism.com/tools/textile/)、[reStructuredText](http://docutils.sourceforge.net/rst.html)、[Grutatext](http://www.triptico.com/software/grutatxt.html) 和 [EtText](http://ettext.taint.org/doc/)，然而最大灵感来源其实是纯文字的电子邮件格式。
 
-因此 Markdown 的語法全由標點符號所組成，並經過嚴謹慎選，是為了讓它們看起來就像所要表達的意思。像是在文字兩旁加上星號，看起來就像*強調*。Markdown 的清單看起來，嗯，就是清單。假如你有使用過電子郵件，區塊引言看起來就真的像是引用一段文字。
+因此 Markdown 的语法全由标点符号所组成，并经过严谨慎选，是为了让它们看起来就像所要表达的意思。像是在文字两旁加上星号，看起来就像强调。Markdown 的清单看起来，嗯，就是清单。假如你有使用过电子邮件，区块引言看起来就真的像是引用一段文字。
 
 ### 行內 HTML
 
 
 
-Markdown 的語法有個主要的目的：用來作為一種網路內容的*寫作*用語言。
+Markdown 的语法有个主要的目的：用来作为一种网路内容的写作用语言。
 
-Markdown 不是要來取代 HTML，甚至也沒有要和它相似，它的語法種類不多，只和 HTML 的一部分有關係，重點*不是*要創造一種更容易寫作 HTML 文件的語法，我認為 HTML 已經很容易寫了，Markdown 的重點在於，它能讓文件更容易閱讀、編寫。HTML 是一種*發佈*的格式，Markdown 是一種*編寫*的格式，因此，Markdown 的格式語法只涵蓋純文字可以涵蓋的範圍。
+Markdown 不是要来取代 HTML，甚至也没有要和它相似，它的语法种类不多，只和 HTML 的一部分有关系，重点不是要创造一种更容易写作 HTML 文件的语法，我认为 HTML 已经很容易写了，Markdown 的重点在于，它能让文件更容易阅读、编写。HTML 是一种发布的格式，Markdown 是一种编写的格式，因此，Markdown 的格式语法只涵盖纯文字可以涵盖的范围。
 
-不在 Markdown 涵蓋範圍之外的標籤，都可以直接在文件裡面用 HTML 撰寫。不需要額外標註這是 HTML 或是 Markdown；只要直接加標籤就可以了。
+不在 Markdown 涵盖范围之外的标签，都可以直接在文件里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。
 
-只有區塊元素──比如 `<div>`、`<table>`、`<pre>`、`<p>` 等標籤，必須在前後加上空行，以利與內容區隔。而且這些（元素）的開始與結尾標籤，不可以用 tab 或是空白來縮排。Markdown 的產生器有智慧型判斷，可以避免在區塊標籤前後加上沒有必要的 `<p>` 標籤。
+只有区块元素──比如 <div>、<table>、<pre>、<p> 等标签，必须在前后加上空行，以利与内容区隔。而且这些（元素）的开始与结尾标签，不可以用 tab 或是空白来缩排。Markdown 的产生器有智慧型判断，可以避免在区块标签前后加上没有必要的 <p> 标签。
 
-舉例來說，在 Markdown 文件裡加上一段 HTML 表格：
+举例来说，在 Markdown 文件里加上一段 HTML 表格：
 
 ```text
 This is a regular paragraph.
@@ -81,19 +81,19 @@ This is a regular paragraph.
 This is another regular paragraph.
 ```
 
-請注意，Markdown 語法在 HTML 區塊標籤中將不會被進行處理。例如，你無法在 HTML 區塊內使用 Markdown 形式的`*強調*`。
+请注意，Markdown 语法在 HTML 区块标签中将不会被进行处理。例如，你无法在 HTML 区块内使用 Markdown 形式的*强调*。
 
-HTML 的區段標籤如 `<span>`、`<cite>`、`<del>` 則不受限制，可以在 Markdown 的段落、清單或是標題裡任意使用。依照個人習慣，甚至可以不用Markdown 格式，而採用 HTML 標籤來格式化。舉例說明：如果比較喜歡 HTML 的  `<a>` 或 `<img>` 標籤，可以直接使用這些標籤，而不用 Markdown 提供的連結或是影像標示語法。
+HTML 的区段标签如 <span>、<cite>、<del> 则不受限制，可以在 Markdown 的段落、清单或是标题里任意使用。依照个人习惯，甚至可以不用Markdown 格式，而采用 HTML 标签来格式化。举例说明：如果比较喜欢 HTML 的  <a> 或 <img> 标签，可以直接使用这些标签，而不用 Markdown 提供的连结或是影像标示语法。
 
-HTML 區段標籤和區塊標籤不同，在區段標籤的範圍內， Markdown 的語法是有效的。
+HTML 区段标签和区块标签不同，在区段标签的范围内， Markdown 的语法是有效的。
 
 ### 特殊字元自動轉換
 
 
 
-在 HTML 文件中，有兩個字元需要特殊處理： `<` 和 `&` 。 `<` 符號用於起始標籤，`&` 符號則用於標記 HTML 實體，如果你只是想要使用這些符號，你必須要使用實體的形式，像是 `&lt;` 和 `&amp;`。
+在 HTML 文件中，有两个字元需要特殊处理： < 和 & 。 < 符号用于起始标签，& 符号则用于标记 HTML 实体，如果你只是想要使用这些符号，你必须要使用实体的形式，像是 &lt; 和 &amp;。
 
-`&` 符號其實很容易讓寫作網路文件的人感到困擾，如果你要打「AT&T」 ，你必須要寫成「`AT&amp;T`」 ，還得轉換網址內的 `&` 符號，如果你要連結到：
+& 符号其实很容易让写作网路文件的人感到困扰，如果你要打“AT&T” ，你必须要写成“AT&amp;T” ，还得转换网址内的 & 符号，如果你要连结到：
 
 ```text
 http://images.google.com/images?num=30&q=larry+bird
@@ -105,9 +105,9 @@ http://images.google.com/images?num=30&q=larry+bird
 http://images.google.com/images?num=30&amp;q=larry+bird
 ```
 
-才能放到連結標籤的 `href` 屬性裡。不用說也知道這很容易忘記，這也可能是 HTML 標準檢查所檢查到的錯誤中，數量最多的。
+才能放到连结标签的 href 属性里。不用说也知道这很容易忘记，这也可能是 HTML 标准检查所检查到的错误中，数量最多的。
 
-Markdown 允許你直接使用這些符號，但是你要小心跳脫字元的使用，如果你是在HTML 實體中使用 `&`符號的話，它不會被轉換，而在其它情形下，它則會被轉換成 `&amp;`。所以你如果要在文件中插入一個著作權的符號，你可以這樣寫：
+Markdown 允许你直接使用这些符号，但是你要小心跳脱字元的使用，如果你是在HTML 实体中使用 &符号的话，它不会被转换，而在其它情形下，它则会被转换成 &amp;。所以你如果要在文件中插入一个著作权的符号，你可以这样写：
 
 ```text
 &copy;
@@ -149,13 +149,13 @@ Markdown 將會把它轉換為：
 
 
 
-一個段落是由一個以上相連接的行句組成，而一個以上的空行則會切分出不同的段落（空行的定義是顯示上看起來像是空行，便會被視為空行。比方說，若某一行只包含空白和 tab，則該行也會被視為空行），一般的段落不需要用空白或斷行縮排。
+一个段落是由一个以上相连接的行句组成，而一个以上的空行则会切分出不同的段落（空行的定义是显示上看起来像是空行，便会被视为空行。比方说，若某一行只包含空白和 tab，则该行也会被视为空行），一般的段落不需要用空白或断行缩排。
 
-「一個以上相連接的行句組成」這句話其實暗示了 Markdown 允許段落內的強迫斷行，這個特性和其他大部分的 text-to-HTML 格式不一樣（包括 MovableType 的「Convert Line Breaks」選項），其它的格式會把每個斷行都轉成 `<br />` 標籤。
+“一个以上相连接的行句组成”这句话其实暗示了 Markdown 允许段落内的强迫断行，这个特性和其他大部分的 text-to-HTML 格式不一样（包括 MovableType 的“Convert Line Breaks”选项），其它的格式会把每个断行都转成 `<br />` 标签。
 
-如果你*真的*想要插入 `<br />` 標籤的話，在行尾加上兩個以上的空白，然後按 enter。
+如果你*真的*想要插入 `<br />` 标签的话，在行尾加上两个以上的空白，然后按 enter。
 
-是的，這確實需要花比較多功夫來插入 `<br />` ，但是「每個換行都轉換為 `<br />`」的方法在 Markdown 中並不適合， Markdown 中 email 式的 [區塊引言](https://zh.mweb.im/markdown-syntax-guide-full-version-zh.html#blockquote) 和多段落的 [清單](https://zh.mweb.im/markdown-syntax-guide-full-version-zh.html#list) 在使用換行來排版的時候，不但更好用，還更好閱讀。
+是的，这确实需要花比较多功夫来插入 `<br />` ，但是“每个换行都转换为 `<br />`”的方法在 Markdown 中并不适合， Markdown 中 email 式的 [区块引言](https://zh.mweb.im/markdown-syntax-guide-full-version-zh.html#blockquote) 和多段落的 [清单](https://zh.mweb.im/markdown-syntax-guide-full-version-zh.html#list) 在使用换行来排版的时候，不但更好用，还更好阅读。
 
 ### 標題
 
