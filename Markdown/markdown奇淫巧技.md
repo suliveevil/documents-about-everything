@@ -1,3 +1,13 @@
+# 奇淫巧计
+
+[TOC]
+
+## markdown转mindmap
+
+### [markdown-to-mind-map](http://brettterpstra.com/2013/08/18/markdown-to-mind-map/?utm_source=tuicool&utm_medium=referral)
+
+PopClip插件
+
 ## 页内跳转
 
 ### 1. 给段落加id
