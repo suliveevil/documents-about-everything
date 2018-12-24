@@ -1,0 +1,22 @@
+# Heads-Up Info Display macro for Keyboard Maestro 7+
+
+by Matt Gemmell ~ http://mattgemmell.com/ ~ @mattgemmell
+
+
+HOW TO INSTALL
+
+1. Double click the "Show heads-up info display.kmmacros" file to install it in Keyboard Maestro. You need Keyboard Maestro version 7 or later.
+
+2. Put the various other files and folders wherever you want. You should have:
+	- battery-icons-svg (a folder, containing 7 items)
+	- battery.rb
+	- calendar-config-html.yml
+	- calendar.rb
+	- calendar.html
+	You should put the two "battery" items in the same location as each other, and the "calendar.rb" and "calendary-config.html.yml" files in the same location as each other.
+
+3. In Keyboard Maestro, edit all three actions in the macro to have the correct file-paths to wherever you put the other files and folders in step 2 above.
+
+That's it.
+
+Note: battery/power info will only show on Macs with an internal battery. The power display will be blank on desktop Macs, though you can tweak the "calendar.html" file's CSS to change that if you want.

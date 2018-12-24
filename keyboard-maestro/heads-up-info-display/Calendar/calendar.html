@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Info</title>
+
+	<style type="text/css">
+
+html {
+	font-family: HelveticaNeue, Verdana, sans-serif;
+	font-size: 20px;
+}
+
+body {
+	margin: 1rem;
+}
+
+a {
+	color: #06f;
+}
+
+a:visited {
+	color: #aaa;
+}
+
+.month {
+	width: 15rem;
+	padding: 0.5rem 0.5rem 0 0.5rem;
+	color: #666;
+	text-align: center;
+	border: 0.2rem solid #eee;
+	border-radius: 0.5rem;
+}
+
+.month, #calendar, #time, #date {
+	float: left;
+}
+
+#time, #date, #battery {
+	float: right;
+	width: 16rem;
+	text-align: center;
+}
+
+#time {
+	font-size: 4rem;
+	font-family: HelveticaNeue-Bold;
+}
+
+#date, #battery {
+	margin-top: 2.2rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.day-number {
+	color: #06f;
+	font-size: 1.8rem;
+}
+
+#battery {
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+.source, .amount, .remaining, .charged {
+	font-weight: bold;
+}
+
+.icon svg {
+	width: 2.4rem;
+}
+
+.source.battery, .amount.battery, .remaining.battery, .charged.battery, .icon.battery svg {
+	color: #0a0;
+	fill: #0a0;
+}
+
+.source.ac, .amount.ac, .remaining.ac, .charged.ac, .icon.ac svg {
+	color: #06f;
+	fill: #06f;
+}
+
+.source.unknown, .amount.unknown, .remaining.unknown, .charged.unknown, .icon.unknown svg {
+	color: red;
+	fill: red;
+}
+
+.icon.status-50 svg, .status-50 .remaining.battery, .status-50 .amount.battery {
+	color: orange;
+	fill: orange;
+}
+
+.icon.status-25 svg, .icon.status-0 svg, .status-25 .remaining.battery, .status-25 .amount.battery, .status-0 .remaining.battery, .status-0 .amount.battery {
+	color: red;
+	fill: red;
+}
+
+div.source, div.charged, div.amount.ac, div.remaining.ac, div.overview {
+	display: none;
+}
+
+.no-battery {
+	display: none;
+}
+
+div.icon.battery, div.amount.battery {
+	float: left;
+	margin-left: 1rem;
+}
+
+div.amount.battery {
+	margin-left: 0.3rem;
+}
+
+div.remaining.battery {
+	float: right;
+	margin-right: 1rem;
+}
+
+div.remaining:after {
+	content: " remaining";
+}
+
+.month.current {
+	color: black;
+	border-color: #06f;
+}
+
+.month + .month {
+	margin-top: 0.5rem;
+}
+
+.month-heading {
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.day-heading, .day {
+	display: inline-block;
+	width: 1.2rem;
+	text-align: right;
+	padding: 0.2rem;
+}
+
+.day-heading + .day-heading, .day + .day {
+	margin-left: 0.5rem;
+}
+
+.day-heading {
+	font-size: 0.6rem;
+	font-weight: bold;
+}
+
+.week {
+	margin: 0.3rem 0;
+}
+
+.week.current {
+	font-weight: bold;
+	background-color: #eee;
+}
+
+.day.current {
+	background-color: #06f;
+	color: white;
+}
+
+
+	</style>
+
+</head>
+
+<body data-kmwindow="700,350"><!-- 700,350 -->
+
+<div id="calendar">CALENDAR</div>
+
+<div id="time">23:59</div>
+
+<div id="date">Wed 29 September 2016</div>
+
+<div id="battery">Running on battery with 99% left and 22:55 until empty.</div>
+
+<script>
+
+document.onkeydown = function(evt) {
+	evt = evt || window.event;
+	if (evt.keyCode == 27) { // Escape
+		// Ensure we know the dialog was cancelled when Escape is pressed.
+		window.KeyboardMaestro.Cancel('Cancel');
+		
+	} else if (evt.keyCode == 13) { // Return
+		// Submit form when Alt-Return is pressed, even in textarea.
+		if (evt.altKey) {
+			window.KeyboardMaestro.Submit('OK');
+		}
+	} else {
+		//document.getElementById('notes').value = evt.keyCode;
+	}
+}
+
+function KMInit() {
+	// Load variables
+	document.getElementById('calendar').innerHTML = window.KeyboardMaestro.ProcessTokens('%Variable%CalendarFromScript%');
+	document.getElementById('time').innerHTML = window.KeyboardMaestro.ProcessTokens('%ICUDateTime%HH:mm%');
+	document.getElementById('date').innerHTML = window.KeyboardMaestro.ProcessTokens('%ICUDateTime%eee \'<span class="day-number">\'d\'</span>\' MMMM YYYY%');
+	document.getElementById('battery').innerHTML = window.KeyboardMaestro.ProcessTokens('%Variable%BatteryStatusFromScript%');
+}
+
+function KMWillShowWindow() {
+	
+}
+
+</script>
+
+</body>
+</html>
