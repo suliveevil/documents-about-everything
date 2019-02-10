@@ -1,0 +1,10 @@
+PWD /allmyfiles/gitFiles/documents-about-everything/TeX/LaTeX入门-test文件
+INPUT /usr/local/texlive/2018/texmf.cnf
+INPUT /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /allmyfiles/gitFiles/documents-about-everything/TeX/LaTeX入门-test文件/root.tex
+OUTPUT /allmyfiles/gitFiles/documents-about-everything/TeX/LaTeX入门-test文件/root.log
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo

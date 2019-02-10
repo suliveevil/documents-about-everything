@@ -1,0 +1,14 @@
+# Fdb version 3
+["pdflatex"] 1549824510 "/allmyfiles/gitFiles/documents-about-everything/TeX/LaTeX入门-test文件/root.tex" "/allmyfiles/gitFiles/documents-about-everything/TeX/LaTeX入门-test文件/root.pdf" "root" 1549824510
+  "/allmyfiles/gitFiles/documents-about-everything/TeX/LaTeX入门-test文件/root.aux" 1549824510 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/allmyfiles/gitFiles/documents-about-everything/TeX/LaTeX入门-test文件/root.tex" 1549824510 150 78517eed0b39aa7f6746130abe94f5c5 ""
+  "/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls" 1523050425 19823 fcbc01552b07b608574cbf8e1977e0c0 ""
+  "/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo" 1523050425 8294 b0f177401f895563eb19304d2389582d ""
+  "/usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf" 1522066949 33362 cf75436e19743e94a92a6b1b9183c434 ""
+  "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1548308676 4220280 720815edc6d2d502ec963b64d76186f6 ""
+  "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
+  "root.tex" 1549824510 150 78517eed0b39aa7f6746130abe94f5c5 ""
+  (generated)
+  "/allmyfiles/gitFiles/documents-about-everything/TeX/LaTeX入门-test文件/root.pdf"
+  "/allmyfiles/gitFiles/documents-about-everything/TeX/LaTeX入门-test文件/root.log"
+  "root.log"
