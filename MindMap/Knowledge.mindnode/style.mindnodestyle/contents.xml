@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>allowNodeStrokeColorVariation</key>
+	<true/>
+	<key>backgroundColor</key>
+	<string>{0.094118, 0.133333, 0.176471, 1.000000}</string>
+	<key>baseSubnode</key>
+	<dict>
+		<key>shapeStyle</key>
+		<dict>
+			<key>borderStrokeStyle</key>
+			<dict>
+				<key>color</key>
+				<string>{0.647000, 0.468000, 0.027000, 1.000000}</string>
+				<key>dash</key>
+				<integer>0</integer>
+				<key>width</key>
+				<real>2</real>
+			</dict>
+			<key>fillColor</key>
+			<string>{0.037000, 0.160000, 0.198000, 1.000000}</string>
+			<key>shapeType</key>
+			<integer>0</integer>
+		</dict>
+		<key>strokeStyle</key>
+		<dict>
+			<key>color</key>
+			<string>{0.647000, 0.468000, 0.027000, 1.000000}</string>
+			<key>dash</key>
+			<integer>0</integer>
+			<key>width</key>
+			<real>6</real>
+		</dict>
+		<key>titleStyle</key>
+		<dict>
+			<key>alignment</key>
+			<integer>0</integer>
+			<key>bold</key>
+			<false/>
+			<key>color</key>
+			<string>{0.984314, 0.956863, 0.862745, 1.000000}</string>
+			<key>fontName</key>
+			<string>HelveticaNeue</string>
+			<key>fontSize</key>
+			<real>14</real>
+			<key>italic</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>crossConnections</key>
+	<array>
+		<dict>
+			<key>arrowStyle</key>
+			<dict>
+				<key>endArrow</key>
+				<integer>1</integer>
+				<key>startArrow</key>
+				<integer>0</integer>
+			</dict>
+			<key>pathStyle</key>
+			<dict>
+				<key>strokeStyle</key>
+				<dict>
+					<key>color</key>
+					<string>{0.647000, 0.468000, 0.027000, 1.000000}</string>
+					<key>dash</key>
+					<integer>0</integer>
+					<key>width</key>
+					<real>2</real>
+				</dict>
+			</dict>
+			<key>titleStyle</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>bold</key>
+				<false/>
+				<key>color</key>
+				<string>{0.984314, 0.956863, 0.862745, 1.000000}</string>
+				<key>fontName</key>
+				<string>HelveticaNeue</string>
+				<key>fontSize</key>
+				<real>14</real>
+				<key>italic</key>
+				<false/>
+				<key>strikethrough</key>
+				<false/>
+				<key>underline</key>
+				<false/>
+			</dict>
+		</dict>
+	</array>
+	<key>mainNodes</key>
+	<array>
+		<dict>
+			<key>shapeStyle</key>
+			<dict>
+				<key>borderStrokeStyle</key>
+				<dict>
+					<key>color</key>
+					<string>{0.273000, 0.357000, 0.383000, 1.000000}</string>
+					<key>dash</key>
+					<integer>0</integer>
+					<key>width</key>
+					<real>2</real>
+				</dict>
+				<key>fillColor</key>
+				<string>{0.037000, 0.160000, 0.198000, 1.000000}</string>
+				<key>shapeType</key>
+				<integer>2</integer>
+			</dict>
+			<key>strokeStyle</key>
+			<dict>
+				<key>color</key>
+				<string>{0.273000, 0.357000, 0.383000, 1.000000}</string>
+				<key>dash</key>
+				<integer>0</integer>
+				<key>width</key>
+				<real>4</real>
+			</dict>
+			<key>titleStyle</key>
+			<dict>
+				<key>alignment</key>
+				<integer>1</integer>
+				<key>bold</key>
+				<false/>
+				<key>color</key>
+				<string>{0.984314, 0.956863, 0.862745, 1.000000}</string>
+				<key>fontName</key>
+				<string>HelveticaNeue</string>
+				<key>fontSize</key>
+				<real>13</real>
+				<key>italic</key>
+				<false/>
+			</dict>
+		</dict>
+	</array>
+	<key>subnodeColors</key>
+	<array>
+		<dict>
+			<key>shapeStyle</key>
+			<dict>
+				<key>borderStrokeStyle</key>
+				<dict>
+					<key>color</key>
+					<string>{0.647000, 0.468000, 0.027000, 1.000000}</string>
+				</dict>
+				<key>fillColor</key>
+				<string>{0.094118, 0.133333, 0.176471, 1.000000}</string>
+			</dict>
+			<key>strokeStyle</key>
+			<dict>
+				<key>color</key>
+				<string>{0.647000, 0.468000, 0.027000, 1.000000}</string>
+			</dict>
+			<key>titleStyle</key>
+			<dict>
+				<key>color</key>
+				<string>{0.984314, 0.956863, 0.862745, 1.000000}</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>shapeStyle</key>
+			<dict>
+				<key>borderStrokeStyle</key>
+				<dict>
+					<key>color</key>
+					<string>{0.450000, 0.541000, 0.020000, 1.000000}</string>
+				</dict>
+				<key>fillColor</key>
+				<string>{0.094118, 0.133333, 0.176471, 1.000000}</string>
+			</dict>
+			<key>strokeStyle</key>
+			<dict>
+				<key>color</key>
+				<string>{0.450000, 0.541000, 0.020000, 1.000000}</string>
+			</dict>
+			<key>titleStyle</key>
+			<dict>
+				<key>color</key>
+				<string>{0.984314, 0.956863, 0.862745, 1.000000}</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>shapeStyle</key>
+			<dict>
+				<key>borderStrokeStyle</key>
+				<dict>
+					<key>color</key>
+					<string>{0.747000, 0.236000, 0.101000, 1.000000}</string>
+				</dict>
+				<key>fillColor</key>
+				<string>{0.094118, 0.133333, 0.176471, 1.000000}</string>
+			</dict>
+			<key>strokeStyle</key>
+			<dict>
+				<key>color</key>
+				<string>{0.747000, 0.236000, 0.101000, 1.000000}</string>
+			</dict>
+			<key>titleStyle</key>
+			<dict>
+				<key>color</key>
+				<string>{0.984314, 0.956863, 0.862745, 1.000000}</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>shapeStyle</key>
+			<dict>
+				<key>borderStrokeStyle</key>
+				<dict>
+					<key>color</key>
+					<string>{0.147000, 0.571000, 0.525000, 1.000000}</string>
+				</dict>
+				<key>fillColor</key>
+				<string>{0.094118, 0.133333, 0.176471, 1.000000}</string>
+			</dict>
+			<key>strokeStyle</key>
+			<dict>
+				<key>color</key>
+				<string>{0.147000, 0.571000, 0.525000, 1.000000}</string>
+			</dict>
+			<key>titleStyle</key>
+			<dict>
+				<key>color</key>
+				<string>{0.984314, 0.956863, 0.862745, 1.000000}</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>shapeStyle</key>
+			<dict>
+				<key>borderStrokeStyle</key>
+				<dict>
+					<key>color</key>
+					<string>{0.128000, 0.463000, 0.782000, 1.000000}</string>
+				</dict>
+				<key>fillColor</key>
+				<string>{0.094118, 0.133333, 0.176471, 1.000000}</string>
+			</dict>
+			<key>strokeStyle</key>
+			<dict>
+				<key>color</key>
+				<string>{0.128000, 0.463000, 0.782000, 1.000000}</string>
+			</dict>
+			<key>titleStyle</key>
+			<dict>
+				<key>color</key>
+				<string>{0.984314, 0.956863, 0.862745, 1.000000}</string>
+			</dict>
+		</dict>
+	</array>
+	<key>subnodeLevels</key>
+	<array/>
+</dict>
+</plist>
